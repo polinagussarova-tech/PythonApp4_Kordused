@@ -30,11 +30,11 @@ while True:
 
 n=int(input("Sisesta arv n: "))
 k=int(input("Sisesta astme näitaja k: "))
+
 limit=n*100
 arv=1
-
 while arv ** k <= limit:
-    print(arv** k)
+    print(arv**k)
     arv+= 1
 
 #3️ Antud on klassi õpilaste füüsika hinded.
