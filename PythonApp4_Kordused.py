@@ -28,8 +28,24 @@ while True:
 #Kasutaja määrab astme näitaja ja arvu n.
 
 
-n=int(input("Sisesta arv n: "))
-k=int(input("Sisesta astme näitaja k: "))
+while True:
+    try:
+        n=int(input("Sisesta arv n: "))
+        if n>0:
+            break
+        else:
+            print("Palun sisesta positiivne arv.")
+    except ValueError:
+        print("Palun sisesta korrektne täisarv.")
+while True:
+    try:
+        k=int(input("Sisesta astme näitaja k: "))
+        if k>0:
+            break
+        else:
+            print("Palun sisesta positiivne astme näitaja.")
+    except ValueError:
+        print("Palun sisesta korrektne täisarv.")
 
 limit=n*100
 arv=1
