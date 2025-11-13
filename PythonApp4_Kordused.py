@@ -62,12 +62,10 @@ print(f"Maksimaalne hinne: {max_hinne}")
 #Määra, mitu rakku on 3, 6, 9, ..., 24 tunni pärast, kui alguses oli üks rakk.
 
 rakk=1
-tund=3
 
-while tund<=24:
+for tund in range(3, 25, 3):
     rakk=rakk*2
     print(f"tunni parast on {tund} rakku {rakk}")
-    tund=tund+3
 
 #5️ Käsna-Kalle praeb kotlette 
 #Tal on K kotletti ja ühele pannile mahub M kotletti.
