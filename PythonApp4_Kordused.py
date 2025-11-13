@@ -91,4 +91,4 @@ try:
             print(f"Viimasele pannile jääb {K} kotletti")
 
 except ValueError:
-    print("Palun sisesta terviklik arv!")
+    print("Palun sisesta täisarv!")
