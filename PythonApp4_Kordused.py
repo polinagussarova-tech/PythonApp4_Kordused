@@ -74,16 +74,23 @@ while tund<=24:
 #Arvuta, mitu täis pannitäit tuleb praadida ja mitu kotletti jääb viimasele pannile.
 #Kasuta ainult tsüklit ja lahutamist.
 
-K=int(input("Sisesta kotlettide arv K: "))
-M=int(input("Sisesta pannile mahtuv kotlettide arv M: "))
+try:
+    K=int(input("Sisesta kotlettide arv K: "))
+    M=int(input("Sisesta pannile mahtuv kotlettide arv M: "))
 
-pannid=0
+    if M<=0:
+        print("Pannile mahtuv kotlettide arv peab olema positiivne!")
+    else:
+        pannid=0
 
-while K>=M:
-    K=K-M
-    pannid=pannid+1
+        while K>=M:
+            K=K-M
+            pannid=pannid+1
 
-if K==0:
-    print("Viimasele pannile ei jää midagi.")
-else:
-    print(f"Viimasele pannile jääb: {K} kotletti")
+        if K==0:
+            print("Viimasele pannile ei jää midagi.")
+        else:
+            print(f"Viimasele pannile jääb {K} kotletti")
+
+except ValueError:
+    print("Palun sisesta terviklik arv!")
